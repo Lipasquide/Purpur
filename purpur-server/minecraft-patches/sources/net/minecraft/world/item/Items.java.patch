@@ -1,6 +1,6 @@
 --- a/net/minecraft/world/item/Items.java
 +++ b/net/minecraft/world/item/Items.java
-@@ -396,7 +_,7 @@
+@@ -396,7 +396,7 @@
      public static final Item PURPUR_BLOCK = registerBlock(Blocks.PURPUR_BLOCK);
      public static final Item PURPUR_PILLAR = registerBlock(Blocks.PURPUR_PILLAR);
      public static final Item PURPUR_STAIRS = registerBlock(Blocks.PURPUR_STAIRS);
@@ -9,7 +9,23 @@
      public static final Item CREAKING_HEART = registerBlock(Blocks.CREAKING_HEART);
      public static final Item CHEST = registerBlock(Blocks.CHEST, p -> p.component(DataComponents.CONTAINER, ItemContainerContents.EMPTY));
      public static final Item CRAFTING_TABLE = registerBlock(Blocks.CRAFTING_TABLE);
-@@ -2105,7 +_,7 @@
+@@ -123,6 +123,7 @@ public class Items {
+     public static final Item ENDER_PEARL;
+     public static final Item BLAZE_ROD;
+     public static final Item GHAST_TEAR;
++    public static final Item LEAPS_INGOT;
+     public static final Item GOLD_NUGGET;
+     public static final Item NETHERITE_INGOT;
+     public static final Item NETHERITE_SCRAP;
+@@ -789,6 +790,7 @@ public class Items {
+         ENDER_PEARL = registerItem("ender_pearl", new EnderPearlItem(new Item.Properties()));
+         BLAZE_ROD = registerItem("blaze_rod", new Item(new Item.Properties()));
+         GHAST_TEAR = registerItem("ghast_tear", new Item(new Item.Properties()));
++        LEAPS_INGOT = registerItem("leaps_ingot", new Item(new Item.Properties()));
+         GOLD_NUGGET = registerItem("gold_nugget", new Item(new Item.Properties()));
+         NETHERITE_INGOT = registerItem("netherite_ingot", new Item(new Item.Properties()), (new Item.Properties()).fireResistant());
+         NETHERITE_SCRAP = registerItem("netherite_scrap", new Item(new Item.Properties()), (new Item.Properties()).fireResistant());
+@@ -2105,7 +2107,7 @@
          "sweet_berries", createBlockItemWithCustomItemName(Blocks.SWEET_BERRY_BUSH), new Item.Properties().food(Foods.SWEET_BERRIES)
      );
      public static final Item GLOW_BERRIES = registerItem(
